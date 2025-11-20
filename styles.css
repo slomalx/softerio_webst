@@ -1,0 +1,79 @@
+
+body {
+    background-color: #FEF4FF;
+}
+
+.container {
+max-width: 1288px;
+width: 100%;
+margin: 0 auto;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 19px;
+    align-items: center;
+}
+
+
+
+#arrow_down {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.header__menu {
+    font-family: 'Montseratt';
+    font-weight: 400;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+
+}
+
+.header__menu li:nth-last-child(2) {
+    margin-right: -25px;
+}
+
+
+
+/* Стили для стрелочки */
+.header__menu img {
+    display: block;
+}
+
+.header__phone {
+    font-family: 'Montseratt';
+    font-weight: 600;
+    font-size: 18px;
+    color: #4386FF;
+    display: block;
+}
+
+.header__mail {
+    font-family: 'Montseratt';
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    opacity: 40%;
+    display: block;
+}
+
+.header__socs {
+    display: flex;
+    gap: 10px;
+}
+
+.header__soc {
+    width: 48px;
+    height: 48px;
+    background-color: #3980FF;
+    border-radius: 5px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
