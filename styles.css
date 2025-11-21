@@ -1,3 +1,4 @@
+/* БАЗА, ОСНОВА */
 
 body {
     background-color: #FEF4FF;
@@ -10,6 +11,8 @@ margin: 0 auto;
 
 }
 
+/* СТИЛИ ХЕДЕРА ============================= */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -20,8 +23,8 @@ margin: 0 auto;
 
 
 #arrow_down {
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
     vertical-align: middle;
 }
 
@@ -32,8 +35,16 @@ margin: 0 auto;
     align-items: center;
     display: flex;
     gap: 30px;
-
 }
+
+.header__menu li.active,
+
+.header__menu li:hover {
+    color: #4386FF;
+    text-shadow: 0px 0px 0.8px currentColor;
+}
+
+
 
 .header__menu li:nth-last-child(2) {
     margin-right: -25px;
@@ -41,7 +52,7 @@ margin: 0 auto;
 
 
 
-/* Стили для стрелочки */
+
 .header__menu img {
     display: block;
 }
@@ -77,3 +88,9 @@ margin: 0 auto;
     justify-content: center; 
     align-items: center;
 }
+
+.header__soc:hover {
+    background-color: #2f68ca; 
+}
+
+/* Добавить динамику хедеру===============, а потом делать дальше*/
