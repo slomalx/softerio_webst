@@ -2,6 +2,7 @@
 
 body {
     background-color: #FEF4FF;
+    min-width: 360px;
 }
 
 .container {
@@ -22,12 +23,6 @@ margin: 0 auto;
 
 
 
-#arrow_down {
-    width: 12px;
-    height: 12px;
-    vertical-align: middle;
-}
-
 .header__menu {
     font-family: 'Montseratt';
     font-weight: 400;
@@ -44,18 +39,51 @@ margin: 0 auto;
     text-shadow: 0px 0px 0.8px currentColor;
 }
 
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
 
-
-.header__menu li:nth-last-child(2) {
-    margin-right: -25px;
-}
-
-
-
-
-.header__menu img {
+  .dropdown-options {
+    padding-top: 15px;
+    margin-left: -10px;
+    display: none;
+    position: absolute;
+    overflow: auto;
+    background-color: #FEF4FF;
+   
+  }
+  
+  .dropdown:hover .dropdown-options {
     display: block;
-}
+  }
+  
+  .dropdown-options a {
+    font-family: 'Montseratt';
+    font-weight: 400;
+    font-size: 16px;
+    display: block;
+    color: #000000;
+    padding:10px 10px;
+    text-shadow: none;
+  }
+  
+  .dropdown-options a:hover {
+    color: #fff;
+    background-color: #4386FF;
+  }
+
+  .header__menu_dropdown_arrow {
+    font-size: 8px;
+    vertical-align: middle;
+    
+  }
+
+  .header__right {
+    display: flex;
+    gap: 20px;
+  }
+
 
 .header__phone {
     font-family: 'Montseratt';
@@ -93,4 +121,64 @@ margin: 0 auto;
     background-color: #2f68ca; 
 }
 
-/* Добавить динамику хедеру===============, а потом делать дальше*/
+.header__burger {
+    display: none;
+    width: 48px;
+    height: 48px;
+    background-color: #3980FF;
+    border-radius: 5px;
+    justify-content: center; 
+    align-items: center;
+}
+
+/*адаптив=========================================*/
+
+@media (max-width: 1300px) {
+  .header {
+    padding: 0 20px 0 20px;
+  }
+
+  .logo {
+    width: 221px;
+    height: 56px; 
+  }
+
+  .header__menu {
+    font-size: 14px;
+    gap: 20px;
+}
+
+.header__phone {
+  font-size: 15px;
+}
+
+.header__mail {
+  font-size: 14px;
+}
+
+.dropdown-options a {
+  font-size: 14px;
+  padding:10px 10px;
+}
+
+}
+
+@media (max-width: 1070px) {
+
+
+ .header__nav {
+  display: none;
+ }
+
+ .header__burger {
+  display: flex;
+ }
+
+
+}
+
+@media (max-width: 600px) {
+  .header__right {
+    display: none;
+  }
+}

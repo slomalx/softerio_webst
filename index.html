@@ -16,18 +16,25 @@
 
         
         <header class="header">
-            <img src="/img/logo.svg" alt="logo">
-            <nav>
-                <ul class="header__menu" >
+           <div> <img class='logo' src="/img/logo.svg" alt="logo"></div>
+            <nav class="header__nav">
+                <ul class="header__menu">
                     <li class="active"><a href="#">Главная</a></li>
                     <li><a href="#">О нас</a></li>
                     <li><a href="#">Наши услуги</a></li>
                     <li><a href="#">Этапы работы</a></li>
                     <li><a href="#">Cтоимость</a></li>
-                    <li><a href="#">Еще</a></li> 
-                    <img src="/img/li_chevron-down.png" alt="arrow_down" id="arrow_down">
+                    <li class="dropdown">
+                        <a href="#">Еще <span class="header__menu_dropdown_arrow">⯆</span></a>
+                        <div class="dropdown-options">
+                            <a href="#">Статьи</a>
+                            <a href="#">Вакансии</a>
+                        </div>
+                        
+                    </li>
                 </ul>
             </nav>
+            <div class="header__right">
             <div>
                 <a href="tel:8 (499) 348-82-16" class="header__phone">8 (499) 348-82-16</a>
                 <a href="mailto:hello@softerio.ru" class="header__mail">hello@softerio.ru</a>
@@ -44,6 +51,12 @@
                     </div>
                 </a>
             </div>
+        </div>
+
+            <div class="header__burger">
+                <img src="/img/burger.png" alt="burger_menu">
+            </div>
+        
         </header>
         
     </div>
