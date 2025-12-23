@@ -12,3 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+function toggleMenu() {
+  document.querySelector('.header__nav').classList.toggle('active');
+}
+

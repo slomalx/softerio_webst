@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Softerio tech</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./fonts.css">
 </head>
 <body>
     
@@ -16,7 +16,7 @@
 
         
         <header class="header">
-           <div> <img class='logo' src="/img/logo.svg" alt="logo"></div>
+           <div> <img class='logo' src="./img/logo.svg" alt="logo"></div>
             <nav class="header__nav">
                 <ul class="header__menu">
                     <li class="active"><a href="#">Главная</a></li>
@@ -42,20 +42,20 @@
             <div class="header__socs">
                 <a href="#"> 
                     <div class="header__soc">
-                        <img src="/img/ic_outline-whatsapp.svg" alt="whatsapp-logo">
+                        <img src="./img/ic_outline-whatsapp.svg" alt="whatsapp-logo">
                     </div>
                 </a>
                 <a href="#">       
                     <div class="header__soc">
-                        <img src="/img/telegram.svg" alt="tg-logo">
+                        <img src="./img/telegram.svg" alt="tg-logo">
                     </div>
                 </a>
             </div>
         </div>
 
-            <div class="header__burger">
-                <img src="/img/burger.png" alt="burger_menu">
-            </div>
+            <button class="header__burger" onclick="toggleMenu()" aria-label="Открыть меню" type="button">
+                <img src="./img/burger.png" alt="burger_menu">
+            </button>
         
         </header>
         
@@ -63,6 +63,6 @@
 
     <!-- ХЕДЕР======================================================-->
    
-    <script src="/script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
