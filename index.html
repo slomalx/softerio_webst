@@ -33,11 +33,12 @@
                         
                     </li>
                 </ul>
+                <div class="mobile_content"></div>
             </nav>
             <div class="header__right">
-            <div>
-                <a href="tel:8 (499) 348-82-16" class="header__phone">8 (499) 348-82-16</a>
-                <a href="mailto:hello@softerio.ru" class="header__mail">hello@softerio.ru</a>
+            <div class="header__contacts">
+                <div class="contacts_row"><img src="img/li_phone.png" alt="phone" class="adaptive_icon"><a href="tel:8 (499) 348-82-16" class="header__phone">8 (499) 348-82-16</a></div>
+              <div class="contacts_row">  <img src="img/li_mail.png" alt="email" class="adaptive_icon"><a href="mailto:hello@softerio.ru" class="header__mail">hello@softerio.ru</a></div>
             </div>
             <div class="header__socs">
                 <a href="#"> 
@@ -54,7 +55,8 @@
         </div>
 
             <button class="header__burger" onclick="toggleMenu()" aria-label="Открыть меню" type="button">
-                <img src="./img/burger.png" alt="burger_menu">
+                <img src="./img/burger.png" alt="burger_menu" class="icon active">
+                <img src="./img/close.png" alt="close" class="icon">
             </button>
         
         </header>
