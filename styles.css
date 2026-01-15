@@ -12,7 +12,9 @@ margin: 0 auto;
 
 }
 
-/* СТИЛИ ХЕДЕРА ============================= */
+/* ============================================
+ХЕДЕР 
+=============================================== */
 
 .header {
     display: flex;
@@ -137,18 +139,109 @@ margin: 0 auto;
 
 /*стили хироимага==========================*/
 
+.flex {
+  display: flex;
+}
+
+.hero_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex_lead {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
 .heroimage {
+  display: flex;
+  justify-content: space-between;
   text-align: center;
   margin: 25px auto;
   width: calc(100% - 60px);
   height: 85vh;
   background-color: #3980FF;
   border-radius: 20px;
- 
-  
-  
+ }
 
-}
+ h1 {
+    font-family: 'Montseratt';
+    font-size: 45px;
+    width: 640px;
+    text-align: left;
+    font-weight: 600;
+    color: white;
+    line-height: 1.2;
+    
+ }
+
+ .heroimage__content {
+  margin-top: 200px;
+ }
+
+ .lead {
+
+  font-family: 'Montseratt';
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  width: 500px;
+  text-align: left;
+ }
+
+ .leads {
+  margin-top: 40px;
+  
+ }
+
+ .heroimage__img {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin-right: 32px;
+ }
+
+  .heroimage__img2 {
+  display: inline-block;
+  height: 40px;
+  width: 32px;
+  margin-right: 32px;
+ }
+
+ .hero_button {
+  padding: 24px 43px;
+  font-family: 'Montseratt';
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+ }
+
+ .hero_button:hover {
+  opacity: 90%;
+ }
+
+ .buttons {
+  margin-top: 40px;
+  gap: 26px;
+ }
+
+ .red_button {
+  background-color: #EB5757;
+ }
+
+  .blue_button {
+  background-color: #0C4AB3;
+ }
+
+ .app_image {
+  height: 600px;
+  width: 600px;
+  align-items: flex-end;
+  margin-top: 100px;
+ }
+
 
 /*адаптив=========================================*/
 
